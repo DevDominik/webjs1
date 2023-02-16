@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Érdekeltség</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="kepek">
+        <select size="5">
+            <option value="a" onclick="kivalaszt(this)">a.png</option>
+            <option value="csillagaszat" onclick="kivalaszt(this)">csillagaszat.png</option>
+            <option value="csillagok" onclick="kivalaszt(this)">csillagok.png</option>
+            <option value="LVNk9kpTURBXy9hZDY4MjU4N2M2OWE1NjFkYTcwNDRiNDIxNDE3MGZkNy5qcGeRkwXNA1TNAeHeAAGhMAE" onclick="kivalaszt(this)">LVNk9kpTURBXy9hZDY4MjU4N2M2OWE1NjFkYTcwNDRiNDIxNDE3MGZkNy5qcGeRkwXNA1TNAeHeAAGhMAE.png</option>
+            <option value="m_egsithrka-scaled-1200x628" onclick="kivalaszt(this)">m_egsithrka-scaled-1200x628.png</option>
+        </select>
+
+    </form>
+    <div id="keptarol">
+        <img id="kep" src="" width="100" height="100">
+    </div>
+    <div id="slider">
+        <input onchange="meretvaltoztat()" type="range" value="200" min="100" max="400" id="szelesseg"><br>
+        <input onchange="meretvaltoztat()" type="range" value="200" min="100" max="400" id="magassag"><br>
+    </div>
+    <div id="opciok">
+        <input type="checkbox" id="kepmodositBlur" onchange="kepmodosit()" value="Blur">Blur<br>
+        <input type="checkbox" id="kepmodositOpacity" onchange="kepmodosit()" value="Opacity">Opacity<br>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
